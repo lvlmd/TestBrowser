@@ -10,21 +10,17 @@ public class OpenFFTest {
         private static WebDriver driver;
 
         @BeforeClass
-        public static void StartBrowserTest(){
+        public static void StartBrowserTest() {
             driver = new FirefoxDriver();
             driver.manage().window().maximize();
         }
         @Test
-        public void OpenFFBrowserTest()
-        {
-           //WebDriver driver = new FirefoxDriver();
-            //driver.manage().window().maximize();
-            driver.get("http://moldgaster.com");
-            //driver.close();
-            //driver.quit();
+        public void OpenFFBrowserTest() {
+
+            driver.get("http://www.nbcolympics.com");
         }
         @AfterClass
-        public static void CloseBrowserTest(){
+        public static void CloseBrowserTest() {
             driver.close();
             driver.quit();
         }
