@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static junit.framework.TestCase.assertTrue;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 /**
  * Created by lvlmd on 3/31/17.
@@ -22,6 +24,8 @@ public class ID001CheckTheTitleTest {
     public void OpenTheBrowser(){
         driver.get("http://www.nbcolympics.com");
         assertTrue (driver.getTitle().startsWith("2018 PyeongChang Olympic Games | NBC Olympics"));
+        assertThat (driver.getTitle(), is("2018 PyeongChang Olympic Games | NBC Olympics"));
+
     }
 
     @AfterClass
