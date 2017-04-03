@@ -31,7 +31,7 @@ public class ID002CheckNewPageTest {
         driver.navigate().to(TheTestPageURL);
         assertThat (driver.getTitle(), is("2018 PyeongChang Olympic Games | NBC Olympics"));
         assertThat (driver.getCurrentUrl(), is(TheTestPageURL));
-        assertThat(driver.getPageSource(), containsString("XXIII Olympic Winter Games: Feb. 8-25, 2018"));
+        assertThat (driver.getPageSource(), containsString("XXIII Olympic Winter Games: Feb. 8-25, 2018"));
 
     }
     @AfterClass
