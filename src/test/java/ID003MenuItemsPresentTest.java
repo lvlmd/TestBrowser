@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by lvlmd on 4/2/17.
  */
-public class ID003WebElementsTest {
+public class ID003MenuItemsPresentTest {
     public static WebDriver driver;
 
     @BeforeClass
